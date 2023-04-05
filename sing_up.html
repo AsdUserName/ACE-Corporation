@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>ACE Bike Corporation</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+
+    body{
+      background: #daddfa;
+      background: linear-gradient(to right, #565768, #daddfa);
+    }
+    .bg{
+      background-image: url(https://i.pinimg.com/564x/fa/bf/03/fabf03f6b93c23ff8f4bf52746612f76.jpg);
+      background-position: center center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container w-75 bg-dark mt-4 mb-4 rounded shadow">
+  <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+      </div>
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-end">
+          <img src="img/Ace.png" width="48" alt="">
+        </div>
+
+        <h2 class="fw-bold text-center py-5">Registrarse</h2>
+
+        <!-- Form -->
+        <form action="#">
+          <div class="mb-2">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="name" placeholder="Nombre">
+          </div>
+          <div class="mb-2">
+            <label for="lastname" class="form-label">Apellido</label>
+            <input type="text" class="form-control" name="lastname" placeholder="Apellido">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" name="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="text" class="form-control" name="password" placeholder="Contraseña nueva">
+          </div>
+          <div class="mb-4">
+            <a href="#">Política de privacidad</a>
+          </div>
+
+          <div class="d-grid">
+            <a type="submit" class="btn btn-primary" href="login.html">Registrarte</a>
+          </div>
+
+          <div class="my-3">
+            <span">¿Ya tienes una cuenta?<a href="login.html">Iniciar Sesión</a></span>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

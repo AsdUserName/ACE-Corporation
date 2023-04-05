@@ -70,7 +70,7 @@ function renderizarProductos() {
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = '+';
+        miNodoBoton.textContent = 'Añadir 🛒';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
         // Insertamos
