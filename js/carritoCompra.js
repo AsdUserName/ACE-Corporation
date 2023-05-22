@@ -4,33 +4,39 @@ const baseDeDatos = [
         id: 1,
         nombre: 'BICICLETA POLYGON TRID ZZ',
         precio: 999990,
+        imagen: 'img/TridZZ.jpg'
     },
     {
         id: 2,
         nombre: 'BICICLETA POLYGON CASCADE 3',
         precio: 199000,
+        imagen: 'img/Cascade3.jpg'
     },
     {
         id: 3,
         nombre: 'BICICLETA POLYGON SISKIU D7',
         precio: 1499000,
+        imagen: 'img/PolygonD7.jpg'
     },
     {
         id: 4,
         nombre: 'BICICLETA POLYGON XTRADA 5',
         precio: 0.6,
+        imagen: 'img/Xtrada5.jpg'
     }
     ,
     {
         id: 5,
         nombre: 'BICICLETA TREK MARLIN 6 2023',
         precio: 549900,
+        imagen: 'img/Marlin6.jpg'
     }
     ,
     {
         id: 6,
         nombre: 'BICICLETA OXFORD MERAK 1',
         precio: 266990,
+        imagen: 'img/merak1.png'
     }
 
 ];
@@ -70,7 +76,7 @@ function renderizarProductos() {
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = 'Añadir 🛒';
+        miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
         // Insertamos

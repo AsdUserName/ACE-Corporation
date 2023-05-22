@@ -1,0 +1,12 @@
+body{
+    background: #daddfa;
+    background: linear-gradient(to right, #565768, #daddfa);
+}
+.bg{
+    background-image: url(https://i.pinimg.com/564x/fa/bf/03/fabf03f6b93c23ff8f4bf52746612f76.jpg);
+    background-position: center center;
+}
+
+input.error{
+    border: 1px solid red;
+}
