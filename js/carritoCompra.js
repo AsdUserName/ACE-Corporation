@@ -4,39 +4,51 @@ const baseDeDatos = [
         id: 1,
         nombre: 'BICICLETA POLYGON TRID ZZ',
         precio: 999990,
-        imagen: 'img/TridZZ.jpg'
+        imagen: 'img/TridZZ.jpg',
+        marca: 'Apple',
+        modelo: ' 1'
     },
     {
         id: 2,
         nombre: 'BICICLETA POLYGON CASCADE 3',
         precio: 199000,
-        imagen: 'img/Cascade3.jpg'
+        imagen: 'img/Cascade3.jpg',
+        marca: 'Apple',
+        modelo: ' 2'
     },
     {
         id: 3,
         nombre: 'BICICLETA POLYGON SISKIU D7',
         precio: 1499000,
-        imagen: 'img/PolygonD7.jpg'
+        imagen: 'img/PolygonD7.jpg',
+        marca: 'Apple',
+        modelo: ' 3'
     },
     {
         id: 4,
         nombre: 'BICICLETA POLYGON XTRADA 5',
-        precio: 0.6,
-        imagen: 'img/Xtrada5.jpg'
+        precio: 666666,
+        imagen: 'img/Xtrada5.jpg',
+        marca: 'Apple',
+        modelo: ' 4'
     }
     ,
     {
         id: 5,
         nombre: 'BICICLETA TREK MARLIN 6 2023',
         precio: 549900,
-        imagen: 'img/Marlin6.jpg'
+        imagen: 'img/Marlin6.jpg',
+        marca: 'Apple',
+        modelo: ' 5'
     }
     ,
     {
         id: 6,
         nombre: 'BICICLETA OXFORD MERAK 1',
         precio: 266990,
-        imagen: 'img/merak1.png'
+        imagen: 'img/merak1.png',
+        marca: 'Apple',
+        modelo: ' 6'
     }
 
 ];
@@ -58,36 +70,68 @@ function renderizarProductos() {
         // Estructura
         const miNodo = document.createElement('div');
         miNodo.classList.add('card', 'col-sm-4');
+        
         // Body
         const miNodoCardBody = document.createElement('div');
         miNodoCardBody.classList.add('card-body');
+        
         // Titulo
         const miNodoTitle = document.createElement('h5');
         miNodoTitle.classList.add('card-title');
         miNodoTitle.textContent = info.nombre;
+        
         // Imagen
         const miNodoImagen = document.createElement('img');
         miNodoImagen.classList.add('img-fluid');
         miNodoImagen.setAttribute('src', info.imagen);
+        
+        // Contenedor de marca y modelo
+        const miNodoMarcaModelo = document.createElement('div');
+        miNodoMarcaModelo.classList.add('marca-modelo', 'row', 'col');
+        
+        // Marca
+        const miNodoMarca = document.createElement('h6');
+        miNodoMarca.classList.add('card-subtitle');
+        miNodoMarca.textContent = info.marca;
+        
+        // Espacio
+        const espacio = document.createElement('span');
+        espacio.innerHTML = '&nbsp;';
+        
+        // Modelo
+        const miNodoModelo = document.createElement('h6');
+        miNodoModelo.classList.add('card-subtitle');
+        miNodoModelo.textContent = info.modelo;
+        
         // Precio
         const miNodoPrecio = document.createElement('p');
         miNodoPrecio.classList.add('card-text');
         miNodoPrecio.textContent = `${info.precio}${divisa}`;
+        
         // Boton 
         const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
-        miNodoBoton.textContent = '+';
+        miNodoBoton.textContent = 'añadir 🛒';
         miNodoBoton.setAttribute('marcador', info.id);
         miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
-        // Insertamos
+        
+        // Estructura los elementos
+        miNodoMarcaModelo.appendChild(miNodoMarca);
+        miNodoMarcaModelo.appendChild(espacio);
+        miNodoMarcaModelo.appendChild(miNodoModelo);
+        
         miNodoCardBody.appendChild(miNodoImagen);
         miNodoCardBody.appendChild(miNodoTitle);
+        miNodoCardBody.appendChild(miNodoMarcaModelo);
         miNodoCardBody.appendChild(miNodoPrecio);
         miNodoCardBody.appendChild(miNodoBoton);
+        
         miNodo.appendChild(miNodoCardBody);
         DOMitems.appendChild(miNodo);
     });
 }
+
+
 
 /**
  * Evento para añadir un producto al carrito de la compra

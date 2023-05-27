@@ -7,6 +7,14 @@ body{
     background-position: center center;
 }
 
+label.error{
+    color: gray;
+}
+
 input.error {
     border: 1px solid red;
+}
+
+div{
+    font-family: 'Times New Roman', Times, serif;
 }

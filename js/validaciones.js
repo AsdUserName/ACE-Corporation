@@ -36,7 +36,6 @@ $("#formulario_inicio").validate({
             minlength: 8,
             maxlength: 30
         }
-
     }
 })
 
