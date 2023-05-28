@@ -34,16 +34,16 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-primary"><span class="text-dark"><img class="img-fluid" src="img/Ace.png" alt="" width="75" height="75"> ACE Bike </span>Corporation</h1>
+                    <h1 class="m-0" style="color: rgb(0, 0, 143);"><span class="text-dark"><img class="img-fluid" src="img/Ace.png" alt="" width="75" height="75"> ACE Bike </span>Corporation</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="contact.html" class="nav-item nav-link">Contactanos</a>
-                        <a href="catalog.html" class="nav-item nav-link active">catálogo</a>
+                        <a href="index.html" class="nav-item nav-link text-muted">Inicio</a>
+                        <a href="contact.html" class="nav-item nav-link text-muted">Contactanos</a>
+                        <a href="catalog.html" class="nav-item nav-link active h5">Catálogo</a>
                     </div>
                 </div>
             </nav>
@@ -60,16 +60,23 @@
         </div>
     </div>
 
+    <div id="div-totop" class="cmn-divfloat">
+        <a href="#span-top" class="btn btn-primary cmn-btncircle">
+          <i class="fa fa-arrow-up">a</i>
+        </a>
+    </div>
+      
+
     <!-- Carrito de compras -->
     <div class="container">
         <div class="row">
             <!-- Elementos generados a partir del JSON -->
-            <main id="items" class="col-sm-8 row"></main>
+            <main id="items" class="col-12 row"></main>
 
            
-                    <div class="col-2 center center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Carrito
+                    <div class="col">
+                        <button type="button" class="btn btn-primary bgb btn-wsp border-primary" target="_blank" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="">Carrito</i>
                         </button>
                     </div>
         
@@ -104,6 +111,10 @@
         </div>
     </div>
     
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top mb-5"><i class="fa fa-angle-double-up"></i></a>
+    <br>
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
@@ -115,9 +126,6 @@
     </div>
     
     <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <!-- Librerias JavaScript -->
     

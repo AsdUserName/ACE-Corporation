@@ -87,11 +87,11 @@ function renderizarProductos() {
         
         // Contenedor de marca y modelo
         const miNodoMarcaModelo = document.createElement('div');
-        miNodoMarcaModelo.classList.add('marca-modelo', 'row', 'col');
+        miNodoMarcaModelo.classList.add('marca-modelo', 'row');
         
         // Marca
-        const miNodoMarca = document.createElement('h6');
-        miNodoMarca.classList.add('card-subtitle');
+        const miNodoMarca = document.createElement('p');
+        miNodoMarca.classList.add('h6', 'card-subtitle');
         miNodoMarca.textContent = info.marca;
         
         // Espacio
@@ -99,8 +99,8 @@ function renderizarProductos() {
         espacio.innerHTML = '&nbsp;';
         
         // Modelo
-        const miNodoModelo = document.createElement('h6');
-        miNodoModelo.classList.add('card-subtitle');
+        const miNodoModelo = document.createElement('p');
+        miNodoModelo.classList.add('h6', 'card-subtitle');
         miNodoModelo.textContent = info.modelo;
         
         // Precio
