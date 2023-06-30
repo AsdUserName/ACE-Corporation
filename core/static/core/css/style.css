@@ -1,0 +1,59 @@
+
+.btn-primary{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: rgb(0, 0, 143);
+  border-color: rgb(0, 0, 121);
+}
+
+.cmn-divfloat {
+  position: fixed !important;
+  bottom: 45px;
+  right: 15px;
+  display: none;
+}
+
+.cmn-btncircle {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.bg-grey{
+  background: #daddfa;
+  background: linear-gradient(to right, #daddfa, #161e8b);
+}
+
+.btn-wsp{
+  position:fixed;
+  width:80px;
+  height:20px;
+  line-height: 63px;
+  top:120px;
+  right:25px;
+  background:rgb(0, 0, 143);
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:15px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+  padding-bottom: 65px;
+}
+
+.btn-wsp:hover{
+  background: rgb(0, 68, 255);
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+  }
+}
